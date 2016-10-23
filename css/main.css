@@ -1,0 +1,48 @@
+body {
+	background-color: #eceff0
+}
+body,
+input {
+	font: 1em "Open Sans", sans-serif;
+	color: : #363639;
+}
+
+.list {
+	background-color: #fff;
+	margin: 20px auto;
+	width: 100%;
+	max-width: 500px;
+	padding:20px;
+	border-radius: 2px;
+	box-sizing: border-box;
+	box-shadow: 3px 3px 0 rgba(0,0,0,.1);
+}
+
+.list .header {
+	font-family: "shadows Into Light Two", cursive;
+	margin: 0 0 10px 0;
+}
+
+.items {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.items li,
+.item-add .input {
+	border: 0;
+	border-bottom: 1px dashed #ccc;
+	padding: 15px 0;
+}
+.input {
+	width: 100%;
+}
+
+.submit {
+	background-color: #fff;
+	padding: 5px 10px;
+	border: 1px solid #ddd;
+	width: 100%;
+	margin-top: 10px;
+}
