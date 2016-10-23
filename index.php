@@ -50,7 +50,7 @@ print_r($items);
 			<?php else: ?>
 					<p>No Items</p>
 			<?php endif;?>
-			<form class="item-add" action="add.php" method="post">
+			<form class="item-add" action="" method="post">
 				<input type="text" name="name" class="input" />
 				<input class="submit" type="submit" value="Add" />
 			</form>
