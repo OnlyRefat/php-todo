@@ -1,16 +1,12 @@
-
-
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "root";
-$dbname = "todo";
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+include('app/init.php');
+
+print_r($conn);
+
 // Check connection
 if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+  die("Connection failed: " . $conn->connect_error);
 } 
 
 $sql = "SELECT id ,name FROM items";
@@ -50,7 +46,7 @@ print_r($items);
 			<?php else: ?>
 					<p>No Items</p>
 			<?php endif;?>
-			<form class="item-add" action="" method="post">
+			<form class="item-add" action="add.php" method="post">
 				<input type="text" name="name" class="input" />
 				<input class="submit" type="submit" value="Add" />
 			</form>
